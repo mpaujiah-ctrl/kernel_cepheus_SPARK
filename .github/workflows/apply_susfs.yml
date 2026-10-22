@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 16.0-exp-2
+          ref: pyro-ksun340
       - name: Replace drivers/kernelsu
         run: |            
           git apply --directory=drivers/kernelsu patches/ksun-3.4.0-legacy-susfs.patch
