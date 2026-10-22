@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 16.0-exp-2
+          ref: pyro-ksun340
       - name: Replace drivers/kernelsu
         run: |
             git clone --depth 1 --branch v3.4.0-legacy https://github.com/KernelSU-Next/KernelSU-Next.git /tmp/ksun
