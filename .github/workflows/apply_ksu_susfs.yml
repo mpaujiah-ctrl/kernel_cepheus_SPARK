@@ -12,12 +12,12 @@ jobs:
           ref: 13_ksu_susfs
       - name: Replace drivers/staging/kernelsu
         run: |            
-          git apply --directory=drivers/staging/kernelsu import_ksu_susfs.patch
+          git apply import_ksu_susfs.patch
      
       - name: Commit
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add -A drivers/staging/kernelsu
+          git add -A drivers/kernelsu
           git commit -m "kernelsu: update KernelSU-Next to v3.3.0 legacy" || echo "nothing to commit"
           git push
