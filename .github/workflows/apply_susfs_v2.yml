@@ -12,7 +12,7 @@ jobs:
           ref: 13_ksu_susfs
       - name: Replace drivers/kernelsu
         run: |            
-          git apply --directory=drivers/kernelsu susfs_v2.patch
+          git apply susfs_v2.patch
      
       - name: Commit
         run: |
